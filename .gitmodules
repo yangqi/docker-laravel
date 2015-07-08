@@ -7,3 +7,6 @@
 [submodule "docker-php-fpm"]
 	path = docker-php-fpm
 	url = https://yangqi@github.com/yangqi/docker-php-fpm.git
+[submodule "docker-mysql-data"]
+	path = docker-mysql-data
+	url = https://yangqi@github.com/yangqi/docker-mysql-data.git
