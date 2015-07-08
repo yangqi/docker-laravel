@@ -1,0 +1,28 @@
+web:
+  build: docker-nginx
+  ports:
+    - "8000:80"
+  links:
+    - php5fpm:www
+    - mysql
+  volumes:
+    - ./code:/var/www
+    - ./conf/nginx/conf.d:/etc/nginx/conf.d
+    - ./log/nginx:/var/log/nginx
+php5fpm:
+  build: docker-php-fpm
+  volumes:
+    - ./log/php-fpm:/var/log/php-fpm
+  expose:
+    - 9000
+mysqldata:
+  build: docker-mysql-data
+mysql:
+  build: docker-mysql
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./conf/mysql:/etc/mysql
+    - ./log/mysql:/var/log/mysql
+  volumes_from:
+    - mysqldata
