@@ -1,12 +1,9 @@
-[submodule "docker-nginx"]
-	path = docker-nginx
-	url = https://yangqi@github.com/yangqi/docker-nginx.git
 [submodule "docker-mysql"]
 	path = docker-mysql
 	url = https://yangqi@github.com/yangqi/docker-mysql.git
-[submodule "docker-php-fpm"]
-	path = docker-php-fpm
-	url = https://yangqi@github.com/yangqi/docker-php-fpm.git
 [submodule "docker-mysql-data"]
 	path = docker-mysql-data
 	url = https://yangqi@github.com/yangqi/docker-mysql-data.git
+[submodule "docker-nginx-php"]
+	path = docker-nginx-php
+	url = https://yangqi@github.com/yangqi/docker-nginx-php.git
