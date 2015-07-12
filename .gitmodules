@@ -7,3 +7,6 @@
 [submodule "docker-nginx-php"]
 	path = docker-nginx-php
 	url = https://yangqi@github.com/yangqi/docker-nginx-php.git
+[submodule "code/laravel"]
+	path = code/laravel
+	url = https://github.com/laravel/laravel.git
